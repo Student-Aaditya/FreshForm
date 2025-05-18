@@ -55,21 +55,21 @@
     <div class="form-container">
       <div class="logo">
         <!-- Replace src with your logo -->
-        <img src="https://img.icons8.com/color/96/vegetarian-food.png" alt="Business Logo" />
+        <img src="logo.jpg" alt="Business Logo" />
       </div>
       <div class="form-title">
         <h2>We Value Your Feedback</h2>
         <p>Please fill out the form below to help us improve.</p>
       </div>
-      <form>
+      <form action="/submit-data"  method="POST">
         <div class="mb-3">
           <label for="name" class="form-label">Full Name *</label>
-          <input type="text" class="form-control" id="name" required>
+          <input type="text" class="form-control" id="name" >
         </div>
 
         <div class="mb-3">
           <label for="mobile" class="form-label">Mobile Number *</label>
-          <input type="tel" class="form-control" id="mobile" required>
+          <input type="tel" class="form-control" id="mobile" >
         </div>
 
         <div class="mb-3">
@@ -134,7 +134,7 @@
           <textarea class="form-control" id="suggestion" rows="3"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-success w-100">Submit Feedback</button>
+        <button type="submit"   class="btn btn-success w-100">Submit Feedback</button>
       </form>
     </div>
   </div>
