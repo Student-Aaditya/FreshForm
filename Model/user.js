@@ -4,10 +4,11 @@ const mongoose = require('mongoose');
 const FeedbackSchema = new mongoose.Schema({
   name: {
     type: String,
-    
+    required:true,
   },
   mobile: {
-    type: String,
+    type: Number,
+    required:true,
   
   },
   rating: {
